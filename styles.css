@@ -1,0 +1,109 @@
+/* styles.css */
+
+body {
+    background-color: #f9f9f9; /* Light background color */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header, footer {
+    background-color: #28a745; /* Green background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove list bullets */
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline; /* Display links inline */
+    margin: 0 15px; /* Space between links */
+}
+
+.navbar a {
+    color: white; /* White link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+    color: #dff9fb; /* Light color on hover */
+}
+
+.section {
+    padding: 40px 20px; /* Add padding to sections */
+    text-align: center; /* Center-align text */
+    opacity: 0; /* Start with sections hidden */
+    transform: translateY(20px); /* Slightly offset */
+    transition: opacity 0.5s, transform 0.5s; /* Transition effects */
+}
+
+.section.visible {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+}
+
+.ai-box {
+    border: 1px solid #28a745; /* Green border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    margin: 20px auto; /* Center the box */
+    max-width: 600px; /* Max width */
+    background-color: #ffffff; /* White background */
+}
+
+.language-box {
+    background-color: #ffcccb; /* Light pink background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin-top: 20px; /* Space above the box */
+}
+
+.language-logos {
+    display: flex; /* Flexbox layout for logos */
+    justify-content: center; /* Center items */
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.language {
+    margin: 10px; /* Space between language items */
+    text-align: center; /* Center text */
+}
+
+.language img {
+    width: 80px; /* Set a fixed width for the logos */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.download-cv-button button {
+    background-color: #28a745; /* Green button color */
+    color: white; /* White button text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.certification {
+    display: inline-block; /* Inline block for certificates */
+    margin: 10px; /* Space between certificates */
+    text-align: center; /* Center text */
+}
+
+.certification img {
+    width: 150px; /* Fixed width for certification images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+ul {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+}
+
+li {
+    margin: 5px 0; /* Space between list items */
+}
