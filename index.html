@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaun Mashale - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+      body {
+          background-color: #f9f9f9; /* Light background color */
+          font-family: 'Roboto', sans-serif;
+          margin: 0;
+          padding: 0;
+      }
+      .header, footer {
+          background-color: #28a745; /* Change header and footer to green */
+          color: white;
+          padding: 20px;
+          text-align: center;
+      }
+      .navbar ul {
+          list-style-type: none;
+          padding: 0;
+      }
+      .navbar ul li {
+          display: inline;
+          margin: 0 15px;
+      }
+      .navbar a {
+          color: white;
+          text-decoration: none;
+          transition: color 0.3s; /* Smooth transition for hover effect */
+      }
+      .navbar a:hover {
+          color: #dff9fb; /* Lighter color on hover */
+      }
+      .section {
+          padding: 40px 20px;
+          text-align: center;
+          opacity: 0; /* Start with sections hidden */
+          transform: translateY(20px); /* Slightly offset */
+          transition: opacity 0.5s, transform 0.5s; /* Transition effects */
+      }
+      .section.visible {
+          opacity: 1; /* Fade in */
+          transform: translateY(0); /* Move to original position */
+      }
+      .ai-box {
+          border: 1px solid #28a745; /* Green border */
+          border-radius: 8px;
+          padding: 20px;
+          margin: 20px auto;
+          max-width: 600px;
+          background-color: #ffffff;
+      }
+      footer {
+          position: relative;
+          bottom: 0;
+          width: 100%;
+      }
+      .language-logos {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+      }
+      .language {
+          margin: 10px;
+          text-align: center;
+      }
+      .download-cv-button button {
+          background-color: #28a745; /* Green button */
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+      .certification {
+          display: inline-block;
+          margin: 10px;
+          text-align: center;
+      }
+      .certification img {
+          width: 150px; /* Set a fixed width for certification images */
+          height: auto; /* Maintain aspect ratio */
+      }
+      ul {
+          list-style: none; /* Remove bullets */
+          padding: 0; /* Remove padding */
+      }
+      li {
+          margin: 5px 0; /* Add space between list items */
+      }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <h1>Shaun Mashale</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#goals" class="nav-link">Goals</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#ai" class="nav-link">AI Box</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section about" data-aos="fade-up">
+    <h2>About Shaun Mashale</h2>
+    <p>I am a passionate and results-oriented third-year Bachelor of Commerce in Information Systems student at North-West University, Mahikeng Campus. Over the course of my studies, I have developed a strong foundation in programming, business analysis, and problem-solving through various hands-on projects. I specialize in creating innovative software solutions that address real-world challenges, with experience in both static websites and dynamic applications. Continuously seeking to expand my skillset, I focus on leveraging technology to drive business success and improve user experiences.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming Languages: HTML, CSS, JavaScript, Python, C#</li>
+      <li>Frameworks: .NET, Flask, TensorFlow</li>
+      <li>Database Management: SQL Server, MySQL, MongoDB</li>
+      <li>Data Analysis: R, Tableau</li>
+      <li>Web Development: Responsive Design, UI/UX Principles</li>
+      <li>Project Management: Agile Methodologies</li>
+    </ul>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section experience" data-aos="fade-up">
+    <h2>Experience</h2>
+    <p>HEX Software Internship (1 Month) - Web Developer</p>
+    <p>Contact Details: +91 9695040540</p>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section certifications" data-aos="fade-up">
+    <h2>Certifications</h2>
+    <div class="certification">
+      <h3>EC-Council Certifications:</h3>
+      <ul>
+        <li>Ethical Hacking Essential (EHE) <img src="img/EHE.jpeg" alt="Ethical Hacking Essential Certification"></li>
+        <li>Network Defense Essential (NDE) <img src="img/NDE.jpeg" alt="Network Defense Essential Certification"></li>
+        <li>Cyber Security for Business - The Fundamental Edition <img src="img/CY.jpeg" alt="Cyber Security for Business Certification"></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects" data-aos="fade-up">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>Reya Vaya Mzansi</h3>
+      <p><strong>Role:</strong> Project Developer</p>
+      <p><strong>Description:</strong> Created a public taxi booking platform aimed at revolutionizing the transportation industry in South Africa. The platform allows users to book taxis, track drivers, and make secure payments.</p>
+      <p><strong>Technologies Used:</strong> C#, .NET, SQL Server, Bootstrap, JavaScript</p>
+    </div>
+    <div class="project">
+      <h3>SlamScam</h3>
+      <p><strong>Role:</strong> Project Lead & Developer</p>
+      <p><strong>Description:</strong> Developed a cybersecurity program designed to prevent online fraud, identity theft, and phishing attacks. The program uses advanced algorithms and machine learning to detect malicious activities.</p>
+      <p><strong>Technologies Used:</strong> Python, TensorFlow, Flask, MySQL</p>
+    </div>
+    <div class="project">
+      <h3>Mental Health Statistics Program</h3>
+      <p><strong>Role:</strong> Data Analyst</p>
+      <p><strong>Description:</strong> Developed a comprehensive statistics program that analyzes and visualizes mental health data for a local NGO, providing valuable insights into community mental health trends.</p>
+      <p><strong>Technologies Used:</strong> R, Tableau, SQL</p>
+    </div>
+    <div class="project">
+      <h3>E-Commerce Website</h3>
+      <p><strong>Role:</strong> Full Stack Developer</p>
+      <p><strong>Description:</strong> Built a fully functional e-commerce site allowing users to browse, add to cart, and purchase products effectively, along with an admin panel for managing products and orders.</p>
+      <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Node.js, MongoDB</p>
+    </div>
+    <div class="project">
+      <h3>Personal Portfolio Website</h3>
+      <p><strong>Role:</strong> Front-End Developer</p>
+      <p><strong>Description:</strong> Designed and developed a personal portfolio website to showcase my projects, skills, and experience, featuring a responsive design and smooth scrolling navigation.</p>
+      <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+    </div>
+  </section>
+
+  <!-- Goals Section -->
+  <section id="goals" class="section goals" data-aos="fade-up">
+    <h2>My Goals</h2>
+    <h3>Short-Term Goals (1-2 Years)</h3>
+    <ul>
+      <li>Graduate with a BCom in Information Systems.</li>
+      <li>Enroll for BCom Honours in Information Systems.</li>
+    </ul>
+    <h3>Long-Term Goals (3+ Years)</h3>
+    <ul>
+      <li>Continue with a Master's Degree in Computer Science and Information Systems.</li>
+      <li>Become a certified IT Business Analyst & System Developer.</li>
+      <li>Complete my studies with a Doctor of Philosophy in Computer Science and Information Systems.</li>
+      <li>Lead technology-driven projects in South Africa.</li>
+      <li>Launch a tech startup focused on all technology.</li>
+      <li>Start MyMinD Company.</li>
+    </ul>
+  </section>
+
+  <!-- Opportunities Section -->
+  <section id="opportunities" class="section opportunities" data-aos="fade-up">
+    <h2>Opportunities I Am Open To</h2>
+    <ul>
+      <li>Business Analyst Roles</li>
+      <li>Cybersecurity & Fraud Prevention Projects</li>
+      <li>Software Development & Software Engineering Roles</li>
+      <li>Internships in Information Systems</li>
+      <li>Freelance Projects for Web & Software Development</li>
+    </ul>
+  </section>
+
+  <!-- AI Box Section -->
+  <section id="ai" class="section ai-box" data-aos="fade-up">
+    <h2>AI FAQs</h2>
+    <div class="ai-content">
+      <h3>Who is Shaun?</h3>
+      <p>Shaun Mashale is a passionate Information Systems student and developer focused on creating innovative technology solutions.</p>
+      <h3>What are your languages?</h3>
+      <p>I am proficient in HTML, CSS, JavaScript, Python, and C#.</p>
+      <h3>What are your career goals?</h3>
+      <p>My goals include obtaining a Master's degree and leading tech projects in South Africa.</p>
+      <!-- Add more FAQs as needed -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <p>CALL OR WHATSAPP: +2778 150 2938</p>
+    <p>Email: <a href="mailto:shaunmashale756@gmail.com">shaunmashale756@gmail.com</a></p>
+    
+    <!-- Download CV Button -->
+    <a href="img/SHAUN MASHALE CV.pdf" download="Shaun_Mashale_CV.pdf" class="download-cv-button">
+      <button type="button">Download My CV</button>
+    </a>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/profile.php?id=100092527044303" target="_blank" rel="noopener noreferrer">
+        <img src="img/facebook.png" alt="Facebook Logo" width="40">
+      </a>
+      <a href="https://www.instagram.com/remyshaunmashale" target="_blank" rel="noopener noreferrer">
+        <img src="img/insta.jpg" alt="Instagram Logo" width="40">
+      </a>
+    </div>
+  </section>
+
+ <!-- Languages Section -->
+<section id="languages" class="section languages" data-aos="fade-up">
+    <h2>Programming Languages</h2>
+    <div class="language-box">
+        <div class="language-logos">
+            <div class="language">
+                <img src="img/HTML5_Logo_512.png" alt="HTML Logo">
+                <p>HTML</p>
+            </div>
+            <div class="language">
+                <img src="img/CSS3_logo_and_wordmark.svg" alt="CSS Logo">
+                <p>CSS</p>
+            </div>
+            <div class="language">
+                <img src="img/javascript.png" alt="JavaScript Logo">
+                <p>JavaScript</p>
+            </div>
+            <div class="language">
+                <img src="img/python-logo-png_seeklogo-332789.png" alt="Python Logo">
+                <p>Python</p>
+            </div>
+            <div class="language">
+                <img src="img/c# logo.png" alt="C# Logo">
+                <p>C#</p>
+            </div>
+            <div class="language">
+                <img src="img/sql logo.png" alt="MySQL Logo">
+                <p>MySQL</p>
+            </div>
+            <div class="language">
+                <img src="img/Java-Logo.png" alt="Java Logo"> <!-- Ensure the image path is correct -->
+                <p>Java</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Shaun Mashale. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // AOS Init
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+
+    // Smooth scrolling for navigation
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function (event) {
+        event.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        window.scrollTo({
+          top: target.offsetTop - 50,
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Fade-in effect for sections
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
